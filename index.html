@@ -5,7 +5,7 @@
     <!-- The description is not directly visible on the page. But it can show up in certain places like search engines. Probably unnecessary for most pages in your blog. -->
     <meta
       name="description"
-      content="Zonelets is a scrappy blogging workflow designed to encourage creative fun on the internet!"
+      content="Come to Eric's Galaxy if you want to explore my universe and have some fun!"
     />
     <!-- This specifies the favicon (little icon on the browser tab) -->
     <link rel="icon" href="./images/spinning moon.gif" type="image/x-icon" />
@@ -21,94 +21,116 @@
     />
     <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
   </head>
-  <body class="dark-theme">
-    <img src="./images/logo.png" alt="Eric's Galaxy" class="center-align" />
-
-    <div id="blog">
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="Eric's Galaxy" style="width: 100%" />
       <div id="header">This site requires JavaScript!</div>
-      <div id="container">
-        <img src="./images/ovni.gif" alt="" style="width: 100%" />
-        <marquee class="marquee-warning">NEW FEATURES COMING SOON!!!</marquee>
+      <img src="./images/ovni.gif" alt="flying ovni" style="width: 100%" />
+      <marquee class="marquee-warning"
+        >NEW FEATURES COMING SOON!!! This site is better displayed at higher
+        resolutions!</marquee
+      >
+      <img
+        src="./images/construction/rotating bar.gif"
+        alt="UNDER CONSTRUCTION!!!"
+        style="width: 100%"
+      />
+    </header>
+
+    <!-- WELCOME! -->
+    <section>
+      <h1>WELCOME TO MY GALAXY</h1>
+      <img src="./images/spinning ship.gif" alt="">
+      <img src="./images/strange world.gif" alt="">
+      <p>
+        Hello! I'm Eric, and this is my unique corner of the internet where you can explore my galaxy. Here, you'll find stories of my adventures, the planets I've metaphorically conquered, the delicious meals I've whipped up, the projects I've poured my heart into, the games I've played and much more. This is more than just a website, this is a journey through my life, passions, and hobbies. Dive in and enjoy exploring my galaxy, where there's always something fun and exciting to do.
+      </p>
+    </section>
+
+    <!-- Music corner -->
+    <section>
+      <h1>Music corner</h1>
+      <div style="margin-bottom: 200px">
+        <img src="./images/dancing robot.gif" alt="" srcset="" />
         <img
-          src="./images/construction/rotating bar.gif"
+          src="./images/jukebox.gif"
           alt=""
-          class="center-align"
-          style="width: 100%"
+          srcset=""
+          style="position: relative; top: 60px; left: 150px"
         />
-        <div id="content">
-          <h1>WELCOME TO MY GALAXY</h1>
-          <p>
-            My name's Eric and this is my galaxy where you can find everything
-            about my history, the planets i've conquered, the foods i've cooked,
-            the projects i've programmed, everything.
-          </p>
-          <h1>Music corner</h1>
-          <div style="margin-bottom: 200px;">
-            <img src="./images/dancing robot.gif" alt="" srcset="" />
-            <img src="./images/jukebox.gif" alt="" srcset="" style="position: relative; top: 60px; left: 50px;"/>
-            <img src="./images/audio.gif" alt="" srcset="" style="position: relative; top: 100px; right: 200px;"/>
-            <img src="./images/audio.gif" alt="" srcset="" style="position: relative; top: 140px; right: 200px;"/>
-            <img src="./images/dj.gif" alt="" srcset="" style="position: relative; top: 140px;"/>
-            <audio autoplay id="audio">
-              <source
-              src="./songs/Earthworm Jim OST - New Junk City.mp3"
-              type="audio/mpeg"
-              />
-            </audio>
-            <button onclick="stopMusic()">Stop music</button>
-            <button onclick="resumeMusic()" style="position: relative; bottom: 80px; left: 50px;">Resume music</button>
-          </div>
-          <h1>GALAXY MAP</h1>
-          <img src="./images/construction/bar.gif" alt="" style="width: 100%" />
-          <div style="display: flex">
-            <img
-              src="./images/construction/machine.gif"
-              alt=""
-              style="width: 50%"
-            />
-            <img
-              src="./images/construction/sign.gif"
-              alt=""
-              style="width: 50%"
-            />
-          </div>
-          <img
-            src="./images/construction/bar 2.gif"
-            alt=""
-            style="width: 100%"
+        <img
+          src="./images/audio.gif"
+          alt=""
+          srcset=""
+          style="position: relative; top: 100px; right: 200px"
+        />
+        <img
+          src="./images/audio.gif"
+          alt=""
+          srcset=""
+          style="position: relative; top: 140px; right: 200px"
+        />
+        <img
+          src="./images/dj.gif"
+          alt=""
+          srcset=""
+          style="position: relative; top: 140px; left: 100px"
+        />
+        <audio autoplay id="audio">
+          <source
+            src="./songs/Earthworm Jim OST - New Junk City.mp3"
+            type="audio/mpeg"
           />
-        </div>
-        <hr />
-        <img src="./images/visitcounter.gif" alt="" />
-        <h4>(VISIT COUNTER)</h4>
-        <!-- end of div id="content" -->
-        <div id="footer"></div>
-        <section
-          style="
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            align-items: center;
-          "
+        </audio>
+        <button
+          onclick="stopMusic()"
+          style="position: relative; right: 60px; bottom: 20px"
         >
-          <img src="images/buttons/alien.gif" alt="" srcset="" />
-          <img
-            src="images/buttons/Button_InternetExplerror.gif"
-            alt=""
-            srcset=""
-          />
-          <img src="images/buttons/colorhunt.gif" alt="" srcset="" />
-          <img src="images/buttons/freestuff.gif" alt="" srcset="" />
-          <img src="images/buttons/guestbook.gif" alt="" srcset="" />
-          <img src="images/buttons/mars_icon.gif" alt="" srcset="" />
-          <img src="images/buttons/lovenow.gif" alt="" srcset="" />
-        </section>
+          Stop music
+        </button>
+        <button
+          onclick="resumeMusic()"
+          style="position: relative; bottom: 80px"
+        >
+          Resume music
+        </button>
       </div>
-    </div>
+    </section>
+
+    <!-- Galaxy map -->
+    <section>
+      <h1>GALAXY MAP</h1>
+      <img src="./images/construction/bar.gif" alt="" style="width: 100%" />
+      <div style="display: flex">
+        <img
+          src="./images/construction/machine.gif"
+          alt=""
+          style="width: 50%"
+        />
+        <img src="./images/construction/sign.gif" alt="" style="width: 50%" />
+      </div>
+      <img src="./images/construction/bar 2.gif" alt="" style="width: 100%" />
+    </section>
+
+    <!-- footer -->
+    <section>
+      <hr />
+      <img src="./images/visitcounter.gif" alt="" />
+      <h4>(VISITOR COUNTER)</h4>
+      <div id="footer"></div>
+      <img src="images/buttons/alien.gif" alt="" srcset="" />
+      <img src="images/buttons/Button_InternetExplerror.gif" />
+      <img src="images/buttons/colorhunt.gif" alt="" srcset="" />
+      <img src="images/buttons/freestuff.gif" alt="" srcset="" />
+      <img src="images/buttons/guestbook.gif" alt="" srcset="" />
+      <img src="images/buttons/mars_icon.gif" alt="" srcset="" />
+      <img src="images/buttons/lovenow.gif" alt="" srcset="" />
+    </section>
     <!-- end of div id="container" -->
     <!-- Here's the link to our JavaScript! -->
     <script src="./script.js"></script>
     <script src="./script/toggler.js"></script>
     <script src="./script/Music.js"></script>
+    <script src="./script/cursor.js" type="module"></script>
   </body>
 </html>

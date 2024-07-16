@@ -1,5 +1,3 @@
-/* Color palette: */
-/* https://colorhunt.co/palette/17153b2e236c433d8bc8acd6 */
 
 @font-face {
   font-family: Garfield;
@@ -14,8 +12,6 @@
   src: url("./fonts/INDFAIT_.TTF");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap");
 :root {
   --font-color: #fff;
   --header-color: #fff;
@@ -23,24 +19,53 @@
 
 body {
   cursor: url("./images/cursor/NORMAL.gif"), auto;
-  text-align: center;
+  margin: 5em auto;
+  margin: 0;  
+  padding: 0 30%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--font-color);
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0 15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 0 5%;
+  }
+}
+
+
+a:hover {
+  cursor: url("./images/cursor/LINK SELECT.cur"), auto;
+}
+
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 h1 {
   font-family: Aerospa;
 }
 
-a:hover {
-  cursor: url("./images/cursor/LINK SELECT.cur"), auto;
-}
-
 .marquee-warning {
-  color: black;
-  background-color: yellow;
   font-family: Garfield;
   font-weight: bolder;
+  color: black;
   padding: 5px;
+  background-color: yellow;
+  text-transform: uppercase;
 }
 
 .theme-toggle {
@@ -56,103 +81,4 @@ a:hover {
   background-color: #bdbdbd;
   padding: 5px;
   border: 5px outset;
-}
-
-.warning {
-  color: var(--warning) !important;
-}
-
-.hidden {
-  display: none;
-}
-
-.center-align {
-  width: 50%;
-  display: block;
-  margin: 10px auto;
-}
-
-.date {
-  font-family: "Rubik", sans-serif;
-  word-spacing: 5px;
-  color: #005500;
-  line-height: 0;
-  font-size: 16px;
-  margin-bottom: 50px;
-}
-
-/* Link styles */
-.active:visited {
-  color: var(--link-color) !important;
-}
-
-.active:visited {
-  color: var(--link-color) !important;
-}
-
-/* Gif styles */
-.gif-container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.gif-md,
-.gif-sm,
-.gif-lg {
-  height: 0;
-  position: relative;
-}
-
-.gif-lg {
-  width: 35%;
-  padding-bottom: 35%;
-}
-
-.gif-md {
-  width: 25%;
-  padding-bottom: 25%;
-}
-
-.gif-sm {
-  width: 15%;
-  padding-bottom: 15%;
-}
-
-@media screen and (max-width: 800px) {
-  .gif-lg {
-    width: 45%;
-    padding-bottom: 45%;
-  }
-
-  .gif-md {
-    width: 35%;
-    padding-bottom: 35%;
-  }
-
-  .gif-sm {
-    width: 25%;
-    padding-bottom: 25%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .gif-lg {
-    width: 55%;
-    padding-bottom: 55%;
-  }
-
-  .gif-md {
-    width: 45%;
-    padding-bottom: 45%;
-  }
-
-  .gif-sm {
-    width: 35%;
-    padding-bottom: 35%;
-  }
-
-  .blog-title {
-    font-size: 1.8rem !important;
-  }
 }

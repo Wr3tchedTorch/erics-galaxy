@@ -1,10 +1,11 @@
-console.log("loading toggler");
-
-let currentTheme = "moon";
 let headerUl = document.getElementById("header").querySelector("ul");
 headerUl.innerHTML += '<li class="theme-toggle"><img src="./images/spinning moon.gif" alt="" srcset=""></li>';
 
 let toggler = headerUl.querySelector("li.theme-toggle");
+let currentTheme = "moon";
+toggler.querySelector("img").src = `./images/spinning ${currentTheme}.gif`;
+document.body.classList.add("dark-theme");
+
 toggler.addEventListener("click", () => {
     updateTheme();
     toggler.querySelector("img").src = `./images/spinning ${currentTheme}.gif`;    
