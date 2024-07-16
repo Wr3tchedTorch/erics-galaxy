@@ -1,24 +1,50 @@
 /* Color palette: */
 /* https://colorhunt.co/palette/17153b2e236c433d8bc8acd6 */
 
-body {
-  cursor: url("./images/cursor/NORMAL.gif"),auto;
-  text-align: center;
+@font-face {
+  font-family: Garfield;
+  src: url("./fonts/GARFIELD\ the\ CAT.ttf");
+}
+@font-face {
+  font-family: Aerospa;
+  src: url("./fonts/AEROSPA_.TTF");
+}
+@font-face {
+  font-family: Indfait;
+  src: url("./fonts/INDFAIT_.TTF");
 }
 
-a:hover {
-  cursor: url("./images/cursor/LINK SELECT.cur"),auto;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap");
 :root {
   --font-color: #fff;
   --header-color: #fff;
 }
 
+body {
+  cursor: url("./images/cursor/NORMAL.gif"), auto;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-family: Aerospa;
+}
+
+a:hover {
+  cursor: url("./images/cursor/LINK SELECT.cur"), auto;
+}
+
+.marquee-warning {
+  color: black;
+  background-color: yellow;
+  font-family: Garfield;
+  font-weight: bolder;
+  padding: 5px;
+}
+
 .theme-toggle {
-  width: 6%;  
+  width: 6%;
 }
 
 .theme-toggle:hover {
@@ -73,7 +99,7 @@ a:hover {
 
 .gif-md,
 .gif-sm,
-.gif-lg {  
+.gif-lg {
   height: 0;
   position: relative;
 }
@@ -88,7 +114,7 @@ a:hover {
   padding-bottom: 25%;
 }
 
-.gif-sm {  
+.gif-sm {
   width: 15%;
   padding-bottom: 15%;
 }
@@ -98,35 +124,35 @@ a:hover {
     width: 45%;
     padding-bottom: 45%;
   }
-  
+
   .gif-md {
     width: 35%;
     padding-bottom: 35%;
   }
-  
-  .gif-sm {  
+
+  .gif-sm {
     width: 25%;
     padding-bottom: 25%;
   }
 }
 
-@media screen and (max-width: 400px) {  
+@media screen and (max-width: 400px) {
   .gif-lg {
     width: 55%;
     padding-bottom: 55%;
   }
-  
+
   .gif-md {
     width: 45%;
     padding-bottom: 45%;
   }
-  
-  .gif-sm {  
+
+  .gif-sm {
     width: 35%;
     padding-bottom: 35%;
   }
 
-  .blog-title { 
+  .blog-title {
     font-size: 1.8rem !important;
   }
 }

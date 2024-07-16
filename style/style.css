@@ -2,11 +2,6 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
-@font-face {
-  font-family: Garfield;
-  src: url("../fonts/GARFIELD\ the\ CAT.ttf");
-}
-
 body {
   font-size: 18px;
   font-family: Georgia, "Times New Roman", serif;
