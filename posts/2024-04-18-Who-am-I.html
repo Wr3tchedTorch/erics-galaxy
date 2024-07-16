@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Who am I - When they cry</title>
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      href="../style/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <h1 class="blog-title"><a href="../index.html">When they cry ♡</a></h1>
+
+    <div id="blog">
+      <div id="header">...</div>
+      <div id="container">
+        <div id="content">
+          <h1 id="postTitleH1"></h1>
+          <h4 id="postDate" class="date"></h4>
+
+          <p>👋 Hello</p>
+          <p>
+            My name's Eric, I'm a passionate developer and philosopher who also
+            enjoys playing chess and reading books. 
+          </p>
+          <p>
+            My favorite animal is the
+            owl.
+          </p>
+          <p>
+            Currently, I'm learning German and improving my web development
+            skills. I created this blog as a way to both share and document my
+            thoughts and life experiences.
+          </p>
+          <p>I intend to make monthly posts about one of these topics:</p>
+          <ul>
+            <li>🌐 Web Development</li>
+            <li>🎮 Game Development</li>
+            <li>🇩🇪 The German language</li>
+            <li>📚 Philosophy</li>
+            <li>🍳 Cooking</li>
+          </ul>
+          <p>
+            I'll probably post twice a month (one about cooking and the other
+            about another topic). I have a lot more to learn, but my goal is to
+            become a game developer and live in Berlin someday.
+          </p>
+
+          <div id="nextprev"></div>
+        </div>
+        <!-- end of div id="content" -->
+        <div id="footer"></div>
+      </div>
+    </div>
+    <!-- end of div id="container" -->
+    <!-- Here's the link to our JavaScript! -->
+    <script src="../script.js"></script>
+    <script>
+      document.getElementById("postTitleH1").innerHTML = "Who am I?";
+      document.getElementById("postDate").innerHTML = "2024 July 14";
+    </script>
+  </body>
+</html>

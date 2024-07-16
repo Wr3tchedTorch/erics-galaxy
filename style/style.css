@@ -1,0 +1,212 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+@font-face {
+  font-family: Garfield;
+  src: url("../fonts/GARFIELD\ the\ CAT.ttf");
+}
+
+body {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;  
+}
+
+.light-theme {
+  background-image: url("../images/sky_tile.gif");
+  --header-color: black;
+  --font-color: black;  
+}
+
+.dark-theme {
+  background-image: url("../images/stars_01.gif");
+  --header-color: white;  
+  --font-color: white;  
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-link-color);
+}
+
+p {
+  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+  font-size: 19px;
+}
+
+hr {
+  border: solid #997e9c;
+  border-width: 2px 0 0 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.right {
+  float: right;
+  margin-left: 1em;
+}
+.left {
+  float: left;
+  margin-right: 1em;
+}
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .small {
+    max-width: 60%;
+    height: auto;
+  }
+}
+.caption {
+  margin-top: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+a:hover {
+  background-color: #e5ddff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: var(--header-color);
+}
+
+#blog {
+  width: 40%;
+  margin: 5em auto;
+  margin-top: 1em;
+}
+
+/*#CONTAINER is the rectangle that contains everything but the background!*/
+#container {
+  width: 100%;
+  color: var(--font-color) !important;
+}
+
+#content {
+  padding: 10px 5% 20px 5%;
+}
+
+/*HEADER STYLE*/
+#header {
+  background-color: transparent;
+  width: 100%;
+  padding: 2% 1%;
+  border-width: 0 0 4px 0;
+}
+
+#header ul {
+  list-style-type: none;
+  padding: 0.5em 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header li {
+  font-size: 1.2em;
+  font-family: Garfield;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 1.5em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+#header li a {
+  color: var(--header-color);
+  text-decoration: none;
+  background-color: inherit;
+}
+#header li a:hover {
+  text-decoration: underline;
+}
+
+/*POST LIST STYLE*/
+#postlistdiv ul {
+  font-size: 1.2em;
+  padding-left: 50px;
+  list-style-type: disc;
+  color: black;
+}
+#recentpostlistdiv ul {
+  font-size: 1em;
+  padding-left: 50px;
+}
+.moreposts {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+.post {
+  line-height: 40px;
+}
+.post a {
+  text-decoration: none;
+  border-bottom: 2px dashed;
+  margin-right: 10px;
+  color: rgb(37, 37, 212);
+}
+.post a:visited {
+  color: rgb(123, 15, 211);
+}
+.post .date {
+  font-weight: 600;
+}
+
+#pinned-posts {
+  background-color: var(--bg-light-color);
+  padding: 15px 50px !important;
+  color: black;
+}
+
+/*NEXT AND PREVIOUS LINKS STYLE*/
+#nextprev {
+  text-align: center;
+  margin-top: 1.4em;
+}
+
+/*DISQUS STYLE*/
+#disqus_thread {
+  margin-top: 1.6em;
+}
+
+/*FOOTER STYLE*/
+#footer {
+  font-size: 0.9em;
+  padding: 0 5% 10px 5%;
+}
+
+@media screen and (max-width: 1300px) {
+  #blog {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #blog {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #blog {
+    width: 95%;
+  }
+}

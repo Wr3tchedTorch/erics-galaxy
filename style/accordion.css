@@ -1,0 +1,43 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion img {
+  width: 3%;
+}
+
+.accordion {
+  background-color: var(--bg-darker-color);
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.active {
+  scale: 1.05;
+}
+
+.accordion:hover {
+  filter: brightness(130%);
+}
+
+.panel {
+  background-color: var(--bg-light-color);
+  max-height: 0;
+  overflow: hidden;
+  color: black;
+}
+
+@media screen and (max-width: 400px) {
+  .accordion img {
+    width: 8%;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Post</title>
+    <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      href="../style/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link href="../style.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <h1 class="blog-title"><a href="../index.html">When they cry ♡</a></h1>
+
+    <div id="blog">      
+      <div id="header">...</div>
+      <div id="container">
+        <div id="content">
+          <h1 id="postTitleH1"></h1>
+          <h4 id="postDate"></h4>
+
+          <p>Meu primeiro post</p>
+
+          <div id="nextprev"></div>
+        </div>
+        <div id="footer"></div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+      document.getElementById("postTitleH1").innerHTML = "POST TITLE";
+      document.getElementById("postDate").innerHTML = "POST DATE";
+    </script>
+  </body>
+</html>
