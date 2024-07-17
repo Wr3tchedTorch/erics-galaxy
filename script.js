@@ -140,7 +140,6 @@ function formatPostLink(i) {
   }
   if (  postDateFormat.test ( postsArray[i][0].slice( 6,17 ) ) ) {
     let postDate = postsArray[i][0].slice(6,16);
-    console.log(postDate)    
     return `<li class="post"><a href="${relativePath}/${postsArray[i][0]}">${postTitle_i}</a> <span class="date">${postDate}</span></li>`;
   } else {
     return '<li><a href="' + relativePath + '/'+ postsArray[i][0] +'">' + postTitle_i + '</a></li>';

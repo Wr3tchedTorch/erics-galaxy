@@ -1,19 +1,45 @@
+body {  
+  margin: 5em auto;
+  margin: 0;
+  padding: 0 30%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--font-color);
+  text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0 15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    padding: 0 5%;
+  }
+}
+
+/* Themes */
+
 .light-theme {
   background-image: url("../images/sky_tile.gif");
   --header-color: black;
-  --font-color: black;  
+  --font-color: black;
 }
 
 .dark-theme {
   background-image: url("../images/stars_01.gif");
-  --header-color: white;  
-  --font-color: white;  
+  --header-color: white;
+  --font-color: white;
 }
 
-p {
-  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
-  font-size: 18px;
-}
+/* Miscellaneous */
 
 hr {
   width: 100%;
@@ -27,10 +53,51 @@ hr {
 }
 
 img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+/* BUTTON AND LINKS */
+
+a {
+  color: rgb(0, 162, 255);
+}
+
+a:visited {
+  color: rgb(212, 0, 255);
+}
+
+button {
+  background-color: var(--button-bg);
+  padding: 10px 5px;
+  border: 5px outset;
+}
+
+a:hover,
+button:hover {
+  cursor: url("../images/cursor/LINK\ SELECT.png"), auto !important;
+  filter: brightness(150%);
+}
+
+/* FONTS */
+
+h1 {
+  font-family: Aerospa;
+}
+
+p {
+  line-height: 1.6em;
+  font-size: 18px;
+  margin: 25px 0;
+}
+
+/* CONTAINERS */
+
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /*HEADER STYLE*/
@@ -62,59 +129,4 @@ img {
 }
 #header li a:hover {
   text-decoration: underline;
-}
-
-/*POST LIST STYLE*/
-#postlistdiv ul {
-  font-size: 1.2em;
-  padding-left: 50px;
-  list-style-type: disc;
-  color: black;
-}
-#recentpostlistdiv ul {
-  font-size: 1em;
-  padding-left: 50px;
-}
-.moreposts {
-  font-size: 0.8em;
-  margin-top: 0.2em;
-}
-
-.post {
-  line-height: 40px;
-}
-.post a {
-  text-decoration: none;
-  border-bottom: 2px dashed;
-  margin-right: 10px;
-  color: rgb(37, 37, 212);
-}
-.post a:visited {
-  color: rgb(123, 15, 211);
-}
-.post .date {
-  font-weight: 600;
-}
-
-#pinned-posts {
-  background-color: var(--bg-light-color);
-  padding: 15px 50px !important;
-  color: black;
-}
-
-/*NEXT AND PREVIOUS LINKS STYLE*/
-#nextprev {
-  text-align: center;
-  margin-top: 1.4em;
-}
-
-/*DISQUS STYLE*/
-#disqus_thread {
-  margin-top: 1.6em;
-}
-
-/*FOOTER STYLE*/
-#footer {
-  font-size: 0.9em;
-  padding: 0 5% 10px 5%;
 }

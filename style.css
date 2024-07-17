@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: Garfield;
   src: url("./fonts/GARFIELD\ the\ CAT.ttf");
@@ -15,48 +14,8 @@
 :root {
   --font-color: #fff;
   --header-color: #fff;
-}
-
-body {
+  --button-bg: #bdbdbd;
   cursor: url("./images/cursor/NORMAL.gif"), auto;
-  margin: 5em auto;
-  margin: 0;  
-  padding: 0 30%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--font-color);
-  text-align: center;
-}
-
-@media screen and (max-width: 1300px) {
-  body {
-    padding: 0 20%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    padding: 0 15%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  body {
-    padding: 0 5%;
-  }
-}
-
-
-a:hover {
-  cursor: url("./images/cursor/LINK SELECT.cur"), auto;
-}
-
-section {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-h1 {
-  font-family: Aerospa;
 }
 
 .marquee-warning {
@@ -78,7 +37,7 @@ h1 {
 }
 
 .theme-toggle img {
-  background-color: #bdbdbd;
+  background-color: var(--button-bg);
   padding: 5px;
   border: 5px outset;
 }

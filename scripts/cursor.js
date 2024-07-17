@@ -2,7 +2,3 @@ import { springyEmojiCursor } from "https://unpkg.com/cursor-effects@latest/dist
 new springyEmojiCursor({
     emoji: "🛸"
 });
-
-window.addEventListener("load", (event) => {
-    new cursoreffects.ghostCursor();
-});
