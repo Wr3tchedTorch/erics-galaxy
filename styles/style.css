@@ -1,3 +1,5 @@
+/* ! RESPONSIVENESS */
+
 body {  
   margin: 5em auto;
   margin: 0;
@@ -25,7 +27,7 @@ body {
   }
 }
 
-/* Themes */
+/* ? THEMES */
 
 .light-theme {
   background-image: url("../images/sky_tile.gif");
@@ -38,8 +40,6 @@ body {
   --header-color: white;
   --font-color: white;
 }
-
-/* Miscellaneous */
 
 hr {
   width: 100%;
@@ -59,7 +59,7 @@ img {
   margin-bottom: 0.5em;
 }
 
-/* BUTTON AND LINKS */
+/* ? BUTTON AND LINKS */
 
 a {
   color: rgb(0, 162, 255);
@@ -75,13 +75,16 @@ button {
   border: 5px outset;
 }
 
+/* ? HOVER */
+
 a:hover,
-button:hover {
+button:hover,
+#language-flag:hover {
   cursor: url("../images/cursor/LINK\ SELECT.png"), auto !important;
   filter: brightness(150%);
 }
 
-/* FONTS */
+/* ? FONTS */
 
 h1 {
   font-family: Aerospa;
@@ -93,14 +96,15 @@ p {
   margin: 25px 0;
 }
 
-/* CONTAINERS */
+/* ? CONTAINERS */
 
 section {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-/*HEADER STYLE*/
+/* ? HEADER STYLE*/
+
 #header {
   background-color: transparent;
   margin: 20px 0;

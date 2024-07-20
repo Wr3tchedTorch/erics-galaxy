@@ -22,10 +22,7 @@ const getLocalTheme = () => {
     setTheme(localTheme);
 }
 
-let headerUl = document.getElementById("header").querySelector("ul");
-headerUl.innerHTML += '<li class="theme-toggle"><img src="" alt="" srcset=""></li>';
-let toggler = headerUl.querySelector("li.theme-toggle");
-
+let toggler = document.getElementById("theme-toggle");
 getLocalTheme();
 
 toggler.addEventListener("click", () => {
