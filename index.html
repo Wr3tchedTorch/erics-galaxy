@@ -24,9 +24,15 @@
   <body>
     <header>
       <img src="./images/logo.png" alt="Eric's Galaxy" style="width: 100%" />
-      <div id="header">This site requires JavaScript!</div>
+      <div id="header">
+        <h3 id="home-select_language">Select a Language</h3>
+        <select name="" id="languageDropdown">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
+      </div>
       <img src="./images/ovni.gif" alt="flying ovni" style="width: 100%" />
-      <marquee class="marquee-warning"
+      <marquee class="marquee-warning" id="home-warning"
         >NEW FEATURES COMING SOON!!! This site is better displayed at higher
         resolutions!</marquee
       >
@@ -39,31 +45,33 @@
 
     <!-- WELCOME! -->
     <section>
-      <h1>WELCOME TO MY GALAXY</h1>
+      <h1 id="home-welcome-title">WELCOME TO MY GALAXY</h1>
       <img src="./images/spinning ship.gif" alt="" />
       <img src="./images/strange world.gif" alt="" />
-      <p>
-        Hello! I'm Eric, and this is my unique corner of the internet where you
-        can explore my galaxy.
-      </p>
-      <p>
-        Here, you'll find stories of my adventures, the delicious meals I've
-        whipped up, the projects I've poured my heart into, the games I've
-        played and much more.
-      </p>
-      <p>
-        This is more than just a website, this is a journey through my life,
-        passions, and hobbies.
-      </p>
-      <p>
-        Dive in and enjoy exploring my galaxy, where there's always something
-        fun and exciting to do.
-      </p>
+      <div id="home-welcome-content">
+        <p>
+          Hello! I'm Eric, and this is my unique corner of the internet where
+          you can explore my galaxy.
+        </p>
+        <p>
+          Here, you'll find stories of my adventures, the delicious meals I've
+          whipped up, the projects I've poured my heart into, the games I've
+          played and much more.
+        </p>
+        <p>
+          This is more than just a website, this is a journey through my life,
+          passions, and hobbies.
+        </p>
+        <p>
+          Dive in and enjoy exploring my galaxy, where there's always something
+          fun and exciting to do.
+        </p>
+      </div>
     </section>
 
     <!-- Music corner -->
     <section>
-      <h1>Music corner</h1>
+      <h1 id="home-music_corner-title">Music corner</h1>
       <div style="margin-bottom: 200px">
         <img src="./images/dancing robot.gif" alt="" srcset="" />
         <img
@@ -91,12 +99,14 @@
         <button
           onclick="stopMusic()"
           style="position: relative; right: 60px; bottom: 20px"
+          id="home-music_corner-stop_music_btn"
         >
           Stop music
         </button>
         <button
           onclick="resumeMusic()"
           style="position: relative; bottom: 80px"
+          id="home-music_corner-resume_music_btn"
         >
           Resume music
         </button>
@@ -105,7 +115,7 @@
 
     <!-- Galaxy map -->
     <section>
-      <h1>GALAXY MAP</h1>
+      <h1 id="home-galaxy_map-title">GALAXY MAP</h1>
       <img src="./images/construction/bar.gif" alt="" style="width: 100%" />
       <div style="display: flex">
         <img
@@ -119,7 +129,7 @@
     </section>
 
     <section>
-      <h1>Update Log:</h1>
+      <h1 id="home-update_log-title">Update Log:</h1>
       <marquee
         behavior="scroll"
         direction="up"
@@ -128,6 +138,9 @@
         loop=""
       >
         <ul>
+          <li>language now is saved locally</li>
+          <li>website is now bilingual (pt, en)</li>
+          <li>theme now is saved locally</li>
           <li>about page complete</li>
           <li>refactoring css code done</li>
           <li>visitor counter added to footer</li>
@@ -140,15 +153,21 @@
     <!-- footer -->
     <section>
       <hr />
-      <h3>YOU ARE VISITOR NUMBER:</h3>
+      <h3 id="home-footer-visitor_counter-title">YOU ARE VISITOR NUMBER:</h3>
       <a href="https://www.cutercounter.com/" target="_blank"
         ><img
           src="https://www.cutercounter.com/hits.php?id=hrxppcko&nd=5&style=53"
           border="0"
           alt="website counter"
       /></a>
-      <h6>(VISITOR COUNTER)</h6>
-      <div id="footer"></div>
+      <h6 id="home-footer-visitor_counter-subtitle">(VISITOR COUNTER)</h6>
+      <div id="home-footer-credits">
+        <p>
+          This blog was created by
+          <a href="https://linktr.ee/ericericeri_">Eric</a> <br />inspired by
+          the small web style (1990-????)
+        </p>
+      </div>
       <img src="images/buttons/alien.gif" alt="" srcset="" />
       <img src="images/buttons/Button_InternetExplerror.gif" />
       <img src="images/buttons/colorhunt.gif" alt="" srcset="" />
@@ -161,7 +180,18 @@
     <!-- Here's the link to our JavaScript! -->
     <script src="./script.js"></script>
     <script src="./scripts/theme.js"></script>
-    <script src="./scripts/music.js"></script>
     <script src="./scripts/cursor.js" type="module"></script>
+    <script type="module" src="./scripts/language.js"></script>
+    <script>
+      document.getElementById("audio").volume = 0.1;
+
+      const stopMusic = () => {
+        document.getElementById("audio").pause();
+      };
+
+      const resumeMusic = () => {
+        document.getElementById("audio").play();
+      };
+    </script>
   </body>
 </html>

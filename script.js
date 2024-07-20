@@ -208,7 +208,7 @@ if (document.getElementById("recentpostlistdiv")) {
   document.getElementById("recentpostlistdiv").innerHTML = recentPostListHTML;
 }
 if (document.getElementById("header")) {
-  document.getElementById("header").innerHTML = headerHTML;
+  document.getElementById("header").innerHTML += headerHTML;
 }
 if (document.getElementById("blogTitleH1")) {
   document.getElementById("blogTitleH1").innerHTML = blogTitle;
