@@ -10,11 +10,20 @@
     <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style/about.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
   </head>
   <body>
-    <div>
+    <div>      
+      <audio autoplay id="audio">
+        <source
+          src="./songs/Super Mario World Music_ Cave.mp3"
+          type="audio/mpeg"          
+        />
+      </audio>
+
+      <!-- GO BACK BUTTON -->
       <a href="./index.html"><img src="./images/about page/arrow.jpg" class="arrow" /></a>
+      <!-- HEAD -->
       <header>
         <img
           src="./images/about page/67.gif"
@@ -22,6 +31,8 @@
         />
         <h1>ABOUT</h1>
       </header>
+      
+      <!-- BODY -->       
       <section>
         <p>
           👋 Sou um desenvolvedor web dedicado a aprimorar constantemente meus
@@ -33,6 +44,8 @@
           esse impacto.
         </p>
       </section>
+      
+      <!-- FLOATING IMAGES -->
       <img
         src="./images/about page/profile pic.jpg"
         style="
@@ -50,5 +63,9 @@
         class="rotate img-lg"
       />
     </div>
+
+    <script>
+      document.getElementById("audio").volume = 0.5;
+    </script>
   </body>
 </html>
