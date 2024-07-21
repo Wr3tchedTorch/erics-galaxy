@@ -20,6 +20,10 @@
 
 /* MISCELLANEOUS */
 
+.hidden {
+  display: none;
+}
+
 .marquee-warning {
   font-family: Garfield;
   font-weight: bolder;
@@ -80,11 +84,11 @@
 }
 
 /* LANGUAGE TOGGLER */
-#language-flag {
+.language-flag {
   width: 90px;
 }
 
-#language-flag:hover {
+.language-flag:hover {
   scale: 1.3;
 }
 

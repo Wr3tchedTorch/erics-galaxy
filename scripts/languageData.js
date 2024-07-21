@@ -2,7 +2,7 @@ const languages = {
     en: {
         home: {
             warning: "NEW FEATURES COMING SOON!!! This site is better displayed at higher resolutions!",
-            select_language: "Select a Language",
+            settings: "SETTINGS",
             welcome: {
                 title: "WELCOME TO MY GALAXY",
                 content: `<p>
@@ -42,16 +42,16 @@ const languages = {
                 credits: "This blog was created by <a href='https://linktr.ee/ericericeri_'>Eric</a> <br>inspired by the small web style (1990-????)"
             }
         },
-        archive: {},
         about: {
             title: "ABOUT",
             content: `👋 I'm a web developer dedicated to constantly improving my knowledge and skills. I have a passion for programming, chess, learning the German language, and reading. The satisfaction of overcoming challenges and solving problems is unparalleled. I firmly believe that technology can positively impact people's lives and I'm always looking for new ways to contribute to this impact.`
         },
+        archive: {}
     },
     pt: {
         home: {
             warning: "NOVAS FUNCIONALIDADES EM BREVE!!! Esse site fica melhor em dispositivos de maiores resoluções!",
-            select_language: "Escolha um idioma",
+            settings: "CONFIGURACOES",
             welcome: {
                 title: "BEM VINDO A MINHA GALAXIA",
                 content: `<p>
@@ -86,7 +86,6 @@ const languages = {
                 credits: "Esse blog foi criado por <a href='https://linktr.ee/ericericeri_'>Eric</a> <br>inspirado pelo estilo da small web (1990-????)"
             }
         },
-        archive: {},
         about: {
             title: "SOBRE",
             content: `👋 Sou um desenvolvedor web dedicado a aprimorar constantemente meus
@@ -97,6 +96,7 @@ const languages = {
             positiva e estou sempre em busca de novas maneiras de contribuir para
             esse impacto.`
         },
+        archive: {}
     }
 }
 

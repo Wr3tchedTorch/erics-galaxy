@@ -6,6 +6,8 @@ const getCurrentPage = () => {
     return location;
 }
 
+// * Updating page text
+
 const updatePage = (language) => {
     const current_page = getCurrentPage();
 
@@ -35,21 +37,44 @@ const updatePage = (language) => {
     }
 }
 
-// Language dropdown event listener
-const dropdown = document.getElementById("languageDropdown");
-if (dropdown != null) {
-    dropdown.addEventListener("change", (e) => {
-        const language = e.target.value;
-        updatePage(language);
-        window.localStorage.setItem("language", language);
-    })
+// * Flags HTML element
+const ptFlag = document.getElementById("pt-flag");
+const enFlag = document.getElementById("en-flag");
+
+// * Updating Flag Icon
+const updateFlagIcon = (language) => {
+    console.log(language);
+    switch (language) {
+        case "en":
+            enFlag.classList.remove("hidden");
+            ptFlag.classList.add("hidden");
+            break;
+        case "pt":
+            ptFlag.classList.remove("hidden");
+            enFlag.classList.add("hidden");
+            break;
+        default:
+            console.log("===========================");
+            console.log("!!! ERROR: error on script language.js !!!");
+            break;
+    }
 }
 
-// Getting language stored in browser
+// * Getting language stored in browser
 const getLocalLanguage = () => {
     const language = window.localStorage.getItem("language");
-    if (language === null) return;
+    if (language === null) return updatePage("en");
 
     updatePage(language);
+    updateFlagIcon(language);
 }
 getLocalLanguage();
+
+// * Language event listener
+const setLanguage = (newLanguage) => {
+    updatePage(newLanguage);
+    updateFlagIcon(newLanguage);
+    window.localStorage.setItem("language", newLanguage);
+}
+enFlag.addEventListener("click", () => setLanguage("pt"));
+ptFlag.addEventListener("click", () => setLanguage("en"));
