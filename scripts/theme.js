@@ -4,12 +4,14 @@ const setTheme = (newTheme) => {
     document.body.classList.add(`${newTheme}-theme`);
     document.body.classList.remove(`${oppositeTheme}-theme`);
 
+    //* Save theme in local storage
+    window.localStorage.setItem("theme", newTheme);
+    
     // Update button icon
+    if (!toggler) return;
     const themeGif = newTheme === "light" ? "sun" : "moon";
     toggler.querySelector("img").src = `./images/spinning ${themeGif}.gif`;
 
-    // Save theme in local storage
-    window.localStorage.setItem("theme", newTheme);
 }
 
 // Default theme is set to dark
@@ -25,7 +27,9 @@ const getLocalTheme = () => {
 let toggler = document.getElementById("theme-toggle");
 getLocalTheme();
 
-toggler.addEventListener("click", () => {
-    currentTheme = currentTheme === "light" ? "dark" : "light";
-    setTheme(currentTheme);
-})
+if (toggler) {
+    toggler.addEventListener("click", () => {
+        currentTheme = currentTheme === "light" ? "dark" : "light";
+        setTheme(currentTheme);
+    })
+}
