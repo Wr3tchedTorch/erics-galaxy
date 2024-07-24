@@ -10,22 +10,99 @@
     <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <link
-      href="./styles/style.css"
-      rel="stylesheet"
-      type="text/css"
-      media="all"
-    />
-    <link href="./style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="./styles/virtualDiary.css" />
   </head>
   <body>
     <!-- TODO: this page will have a paper/journal theme, just like a diary. In here i'll post monthly blogs about my life -->
+    <!-- Previous Button -->
+    <button id="prev-btn">
+      <img src="./images/virtual diary page/arrow.svg" alt="">
+    </button>
 
-    <section>
-      <h1>Virtual Diary</h1>
-    </section>
+    <!-- Book -->
+    <div id="book" class="book">
+      <!-- Paper 1 -->
+      <div class="paper">
+        <div class="front">
+          <div class="front-content">
+            <h1>INTRODUÇÃO</h1>
+            <p>
+              Sou um desenvolvedor web dedicado a aprimorar constantemente
+              meus conhecimentos e habilidades. Tenho uma paixão pela
+              programação, pelo xadrez, pelo aprendizado da lingua alemã e pela
+              leitura. A satisfação de superar desafios e resolver problemas é
+              incomparável. Acredito firmemente que a tecnologia pode impactar a
+              vida das pessoas de forma positiva e estou sempre em busca de
+              novas maneiras de contribuir para esse impacto.
+            </p>
+            <br><br>
+            <p>
+              Sou um desenvolvedor web dedicado a aprimorar constantemente
+              meus conhecimentos e habilidades. Tenho uma paixão pela
+              programação, pelo xadrez, pelo aprendizado da lingua alemã e pela
+              leitura. A satisfação de superar desafios e resolver problemas é
+              incomparável. Acredito firmemente que a tecnologia pode impactar a
+              vida das pessoas de forma positiva e estou sempre em busca de
+              novas maneiras de contribuir para esse impacto.
+            </p>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <h1>Page 2</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Paper 2 -->
+      <div class="paper">
+        <div class="front">
+          <div class="front-content">
+            <h1>Page 3</h1>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <h1>Page 4</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Paper 3 -->
+      <div class="paper">
+        <div class="front">
+          <div class="front-content">
+            <h1>Page 5</h1>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <h1>Page 6</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Paper 4 -->
+      <div class="paper">
+        <div class="front">
+          <div class="front-content">
+            <h1>Page 7</h1>
+          </div>
+        </div>
+        <div class="back">
+          <div class="back-content">
+            <h1>Page 8</h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="./scripts/theme.js"></script>
-    <script src="./script.js"></script>
+    <!-- Next Button -->
+    <button id="next-btn">
+      <img src="./images/virtual diary page/arrow.svg" alt="">
+    </button>
+
+    <script src="./scripts/virtualDiary.js"></script>
+    <script
+      src="https://kit.fontawesome.com/943d6f2f47.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
