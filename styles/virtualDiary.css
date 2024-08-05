@@ -15,10 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-family: sans-serif;
   overflow: hidden;
-
   background-image: url("../images/virtual\ diary\ page/bg_purplePaper.png");
 }
 
@@ -28,36 +25,32 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Tillana";
   text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 20px;
 }
 
 p {
   text-align: justify;
   font-family: "Tillana";
-  font-size: 16px;
-  font-weight: 500;
   line-height: 1.6em;
+  font-size: 18px;
 }
 
 /* Book */
 .book {
-  position: relative;
   width: 35%;
   height: 700px;
-  transition: transform 0.5s;
+  position: relative;
   border-radius: 5%;
+  transition: transform 0.5s;
 }
 
 .paper {
-  position: absolute;
   width: 100%;
   height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
-  perspective: 1500px;
+  perspective: 2000px;
 }
 
 .front,
@@ -67,15 +60,14 @@ p {
   background-size: cover;
   box-shadow: 5px 5px 10px rgba(27, 27, 27, 0.168);
   border-left: 10px rgb(255, 255, 255) dashed;
-
-  position: absolute;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  position: absolute;
   top: 0;
   left: 0;
+  padding: 40px 70px;
   transform-origin: left;
   transition: transform 0.5s;
-  padding: 40px 70px;
 }
 
 .cover {
@@ -86,38 +78,30 @@ p {
 
 .cover .back-content,
 .cover .front-content {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-wrap: wrap;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
 }
 
 .cover .back-content p,
-.cover .back-content h1,
 .cover .front-content p,
+.cover .back-content h1,
 .cover .front-content h1 {
+  font-size: 100px;
   font-family: "Sankofa Display";
+  text-shadow: 4px 4px black;
+  letter-spacing: 5px;
   color: #fff;
-  text-shadow: 8px 8px black;
 }
 
 .cover .back-content p,
 .cover .front-content p {
-  width: 100%;
-  text-align: center;
-  font-size: 30px;
   font-weight: 600;
+  font-size: 30px;
   letter-spacing: 3px;
   word-spacing: 10px;
-  text-shadow: 4px 4px black;
-}
-
-.cover .back-content h1,
-.cover .front-content h1 {
-  font-size: 100px;
-  letter-spacing: 8px;
-  margin-bottom: 0;
 }
 
 .front {
@@ -153,7 +137,7 @@ button {
   margin: 10px;
   padding: 10px 30px;
   border: none;
-  
+
   background: url("../images/virtual\ diary\ page/cardboard.jpg ");
   background-size: cover;
   transition: transform 0.5s;
