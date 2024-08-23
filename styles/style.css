@@ -30,13 +30,13 @@ body {
 /* ? THEMES */
 
 .light-theme {
-  background-image: url("../images/sky_tile.gif");
+  background-image: url("../images/pages/home/sky_tile.gif");
   --header-color: black;
   --font-color: black;
 }
 
 .dark-theme {
-  background-image: url("../images/stars_01.gif");
+  background-image: url("../images/pages/home/stars_01.gif");
   --header-color: white;
   --font-color: white;
 }
@@ -50,7 +50,7 @@ section {
 hr {
   width: 100%;
   height: 20px;
-  background-image: url("../images/light\ saber.png");
+  background-image: url("../images/pages/home/light\ saber.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

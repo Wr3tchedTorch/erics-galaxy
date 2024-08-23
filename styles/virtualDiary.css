@@ -16,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-image: url("../images/virtual\ diary\ page/bg_purplePaper.png");
+  background-image: url("../images/pages/virtual\ diary/bg_purplePaper.png");
 }
 
 /* Font */
@@ -55,7 +55,7 @@ p {
 
 .front,
 .back {
-  background: url("../images/virtual\ diary\ page/paper-container-bg.jpg");
+  background: url("../images/pages/virtual\ diary/paper-container-bg.jpg");
   background-position: center center;
   background-size: cover;
   box-shadow: 5px 5px 10px rgba(27, 27, 27, 0.168);
@@ -71,7 +71,7 @@ p {
 }
 
 .cover {
-  background: url("../images/virtual diary page/book-cover.jpg");
+  background: url("../images/pages/virtual diary/book-cover.jpg");
   background-position: 0px;
   background-size: cover;
 }
@@ -138,7 +138,7 @@ button {
   padding: 10px 30px;
   border: none;
 
-  background: url("../images/virtual\ diary\ page/cardboard.jpg ");
+  background: url("../images/pages/virtual\ diary/cardboard.jpg ");
   background-size: cover;
   transition: transform 0.5s;
 }
@@ -146,6 +146,17 @@ button {
 button img {
   width: 80px;
   transition: 100ms;
+}
+
+#go-back {
+  position: absolute;
+  left: 20px;
+  padding: 5px 20px;
+}
+
+#go-back img {
+  width: 80px;
+  padding: 0;
 }
 
 #next-btn {
