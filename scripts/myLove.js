@@ -1,8 +1,9 @@
 
+new Audio("../songs/myLove/Winnie The Pooh - from Disney's Winnie The Pooh Relaxing Piano Version.mp3").play();
+
 const { years, months, days } = calculateTimePassed("2024-05-10");
 
 document.getElementById("date-display").innerHTML = `Feliz ${days} dias ${years == "" ? `e ${months} meses` : `, ${months} meses e ${years} anos`} de namoro<span class="heart">💜</span>`;
-
 
 function calculateTimePassed(pastDateString) {
     const pastDate = new Date(pastDateString);
