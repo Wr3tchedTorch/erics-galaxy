@@ -1,6 +1,193 @@
-#television {
-  width: 80%;
-  height: 80vh;
-  background: url("../images/computer/purepng.com-old-televisiontvtelecommunicationmonochromeblack-and-whittelevisionoldblack-and-white-1421526535595ol0vn.png")
+@font-face {
+  font-family: VCR;
+  src: url("../fonts/VCR_OSD_MONO_1.001.ttf");
+}
+
+body {
+  color: white;
+  text-transform: uppercase;
+  font-family: VCR !important;
+  letter-spacing: 2px;
+
+  background-image: url("../images/pages/computer/stars_02.gif");
+  background-position: center center;
+  transform: scale(1);
+  overflow-x: hidden;
+  transform-origin: center;
+
+  padding-bottom: 150px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#full-screen-overlay {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
+  background: black;
+  opacity: 0.8;
+
+  display: none;
+}
+
+#key-dictionary {
+  width: 40%;
+  height: fit-content;
+  position: absolute;
+  z-index: 1000;
+  left: 30%;
+  top: 5%;
+  padding: 0 80px;
+
+  background: url("../images/pages/computer/0b41253a4041ddb57004d633e4979430.jpg");
+  background-size: cover;
+  display: none;
+
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.dictionary-body {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.dictionary-body p {
+  margin-top: 40px;
+}
+
+#key-dictionary h1 {
+  padding-top: 0;
+  letter-spacing: 8px;
+}
+
+#key-dictionary h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#key-dictionary p {
+  text-align: justify;
+  font-weight: bold;
+  font-size: 17px;  
+}
+
+#dictionary-list {
+  padding: 20px 80px;
+  border: 4px dashed;
+  list-style: decimal-leading-zero;
+}
+
+#dictionary-list li {
+  font-family: VCR !important;
+  font-size: 19px;
+  font-style: italic;
+}
+
+#dictionary-close-sign {
+  width: fit-content;
+  position: absolute;
+  left: -100px;
+  color: white !important;
+
+  font-size: 80px;
+  font-family: serif;
+}
+
+#dictionary-close-sign:hover {
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+#paper-ball {
+  width: 200px;
+  height: 200px;
+
+  background: url("../images/pages/computer/white-crumpled-paper-balls-for-design-element-png.webp");
+  background-size: cover;
+
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  animation: spin 20s infinite ease-in-out alternate-reverse;
+}
+
+#paper-ball:hover {
+  cursor: pointer;
+  width: 240px;
+  height: 240px;
+  filter: brightness(120%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#television-container {
+  width: 913px;
+  height: 60vh;
+  margin: 80px auto;
+}
+
+#television-background {
+  width: 913px;
+  height: 100%;
+  position: absolute;
+  background: url("../images/pages/computer/purepng.com-old-televisiontvtelecommunicationmonochromeblack-and-whittelevisionoldblack-and-white-1421526535595ol0vn.png")
     no-repeat;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#television-body {
+  width: 600px;
+  height: 500px;
+  padding: 180px 60px;
+}
+
+#noise-overlay,
+#black-overlay {
+  pointer-events: none;
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  margin: 10px;
+  z-index: -9;
+  background-color: black;
+}
+
+#noise-overlay {
+  z-index: -8;
+  background-image: url("../images/pages/computer/tv-static-gif-7-ezgif.com-webp-to-gif-converter.gif");
+  opacity: 0.25;
+}
+
+h1 {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  width: 60%;
+  margin-left: 15%;
+  text-transform: uppercase;
+
+  height: 25px;
+  border: none;
+  padding: 10px 20px;
+  opacity: 0.85;
+  font-size: 20px;
 }

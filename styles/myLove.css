@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #6c48c5;
+  --secondary-color: #C68FE6;
+  --accent-color: #c68fe6;
+  --button-color: #1f40c5;
+  --text-color: #000000;
+  --secondary-text-color: #ffffffff;
+  --background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.9rem;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 5px solid var(--text-color);
+  transform: rotate(-2deg);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+.section {
+  background-color: var(--background-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 5px solid var(--text-color);
+  box-shadow: 10px 10px 0 var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.gif-placeholder {
+  width: 100%;
+  height: 400px;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--text-color);
+  border: 5px solid var(--text-color);
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: var(--text-color);
+  margin-top: 0;
+  text-transform: uppercase;
+  line-height: 1.8em;
+}
+
+.heart {
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+button {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+}
+
+.floating-hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.floating-heart {
+  position: absolute;
+  font-size: 20px;
+  animation: floatUp 4s linear infinite;
+}
+
+#music-button {
+    background-color: var(--button-color);
+    color: var(--secondary-text-color);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 4px solid var(--text-color);
+    box-shadow: 8px 8px 0 var(--text-color);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+#music-button:hover {
+    box-shadow: 4px 4px 0 var(--text-color);
+    transform: translate(4px, 4px);
+}
+
+#music-button:active {
+    box-shadow: none;
+    transform: translate(8px, 8px);
+}
+
+#music-button span {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  .gif-placeholder {
+    height: 150px;
+  }
+}

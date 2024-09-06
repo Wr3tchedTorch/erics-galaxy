@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine's Day, Dani!</title>
+    <link rel="stylesheet" href="./styles/myLove.css" />
+  </head>
+  <body>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <header>
+      <h1 id="date-display"></h1>
+    </header>
+    <div class="container">
+      <div class="section">
+        <h2>Eu te amo muito ❤️</h2>
+        <p>
+          "How lucky I am to have something that makes saying goodbye so hard"
+        </p>
+        <br />
+        <div
+          class="gif-placeholder"
+          style="
+            background-image: url('./images/pages/myLove/winnie.png');
+            background-position: center center;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+      <div class="section">
+        <h2>Você é importante pra mim 💚</h2>
+        <p>
+          "It's the time you have wasted for your rose that makes you rose so
+          important."
+        </p>
+        <br />
+        <div
+          class="gif-placeholder"
+          style="
+            background-image: url('./images/pages/myLove/prince.webp');
+            background-position: center -100px;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+      <div class="section">
+        <h2>💛</h2>
+        <p>"Any day spent with you is my favorite day."</p>
+        <br />
+        <div
+          class="gif-placeholder"
+          style="
+            background-image: url('./images/pages/myLove/christopher-robin-pooh-bear-39325a62459043dba1bd88774b7acafa.jpg');
+            background-position: center -100px;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+      <div class="section">
+        <h2>💙</h2>
+        <p>
+          "The most beautifull things in the world cannot be seen or touched,
+          they are felt with the heart."
+        </p>
+        <br />
+        <div
+          class="gif-placeholder"
+          style="
+            background-image: url('./images/pages/myLove/il_fullxfull.2669212239_7ri4.avif');
+            background-position: center -100px;
+            background-size: cover;
+          "
+        ></div>
+      </div>
+    </div>
+    <script>
+      function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("floating-heart");
+        heart.innerHTML = ["❤️", "🖤", "💚", "💜", "💛"][
+          Math.floor(Math.random() * 5)
+        ];
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+        document.getElementById("floatingHearts").appendChild(heart);
+        setTimeout(() => {
+          heart.remove();
+        }, 5000);
+      }
+      setInterval(createHeart, 300);
+    </script>
+    <script src="scripts/myLove.js"></script>
+  </body>
+</html>

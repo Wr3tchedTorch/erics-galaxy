@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/computer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/computer.css" />
+    <link rel="stylesheet" href="./styles/glitch.css" />
     <title>Document</title>
-</head>
-<body>
-    <section id="television">
-        
+  </head>
+  <body>
+    <div id="full-screen-overlay"></div>
+    <div id="key-dictionary">
+      <div id="dictionary-close-sign">X</div>
+      <div class="dictionary-body">
+        <h1 id="computer-dictionary-title">DICTIONARY</h1>
+        <h2 id="computer-dictionary-subtitle">CLASSIFIED - AUTHORIZED PERSONNEL ONLY</h2>
+        <p id="computer-dictionary-description">
+          ATTENTION!!! The following content is highly classified. Unauthorized
+                                access, dissemination, or reproduction of this document is strictly
+                                prohibited under penalty of law. Proceed with caution. This manual
+                                contains sensitive material
+                                <p>
+                                    To carry out the necessary actions, you are advised to proceed with utmost caution when executing these commands. Some may find the results unsettling.                                    
+                                </p>
+                                <p>KEYS:</p>
+        </p>
+        <ul id="dictionary-list"></ul>
+      </div>
+    </div>
+    <div id="paper-ball"></div>
+
+    <section id="television-container">
+      <div id="television-background"></div>
+
+      <div id="black-overlay"></div>
+      <div id="noise-overlay"></div>
+
+      <div id="television-body">
+        <h1 id="computer-screen-title">Enter a Key</h1>
+        <input
+          type="text"
+          name=""
+          placeholder="press enter to search"
+          id="key-input"
+        />
+      </div>
     </section>
-</body>
+
+    <script src="./scripts/language.js" type="module"></script>
+    <script src="./scripts/computer/computer.js"></script>
+    <script src="./scripts/computer/paperBall.js"></script>
+  </body>
 </html>

@@ -40,6 +40,24 @@ const languages = {
                     subtitle: "(VISITOR COUNTER)"
                 },
                 credits: "This blog was created by <a href='https://linktr.ee/ericericeri_'>Eric</a> <br>inspired by the small web style (1990-????)"
+            },
+            computer: {
+                dictionary: {
+                    title: "DICTIONARY",
+                    subtitle: "CLASSIFIED - AUTHORIZED PERSONNEL ONLY",
+                    description: `ATTENTION!!! The following content is highly classified. Unauthorized
+                                access, dissemination, or reproduction of this document is strictly
+                                prohibited under penalty of law. Proceed with caution. This manual
+                                contains sensitive material
+                                <p>
+                                    To carry out the necessary actions, you are advised to proceed with utmost caution when executing these commands. Some may find the results unsettling.                                    
+                                </p>
+                                <p>KEYS:</p>`
+                },
+                screen: {
+                    title: "Enter a key",
+                    input: "press enter to search"
+                }
             }
         },
         about: {
@@ -96,7 +114,22 @@ const languages = {
             positiva e estou sempre em busca de novas maneiras de contribuir para
             esse impacto.`
         },
-        archive: {}
+        computer: {
+            dictionary: {
+                title: "DICIONÁRIO",
+                subtitle: "CONFIDENCIAL - SOMENTE PARA PESSOAL AUTORIZADO",
+                description: `ATENÇÃO
+                            O conteúdo a seguir é altamente confidencial. O acesso, disseminação ou reprodução não autorizada deste documento é estritamente proibido sob pena de lei. Prossiga com cautela. Este manual contém material sensível
+                            <p>
+                                Para realizar as ações necessárias, recomenda-se extrema cautela ao executar esses comandos. Alguns podem achar os resultados perturbadores.
+                            </p>
+                            <p>CHAVES:</p>
+                            `
+            },
+            screen: {
+                title: "Insira uma chave",
+            }
+        }
     }
 }
 
