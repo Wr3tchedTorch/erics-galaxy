@@ -2,8 +2,8 @@ const input = document.getElementById("key-input");
 
 let inputIsInFocus = false;
 
-let backgroundMusic = new Audio("../songs/computer/Lucy In Disguise - Southbound.mp3");
-backgroundMusic.volume = 0.15;
+let backgroundMusic = new Audio("../songs/computer/oscillating-space-waves-31400.mp3");
+backgroundMusic.volume = .8;
 backgroundMusic.loop = true;
 backgroundMusic.play();
 
@@ -27,7 +27,7 @@ const LoadInput = (e) => {
 }
 
 const openLink = (url) => {
-    window.location.href = url;
+    window.open(url, '_blank').focus();
 }
 
 const dictionary = {
